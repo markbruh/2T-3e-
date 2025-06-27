@@ -53,23 +53,31 @@ body {
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
+
+
+botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
 .botoes {
-    display: flex;
+    display: block;
 }
 
-.botao:first-child {
-    border-radius: 40px 0 0 0;
+.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
 
-    .ativo{
-    background: var(--botao-ativo);
-    border-bottom: 4px solid var (--verde);
-}
-@media screen and (min-width: 760px){
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
 
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
 
-.botao:last-child{
-    border-radius: 0 40px 0 0;
-}
-
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
